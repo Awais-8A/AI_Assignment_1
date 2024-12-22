@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Pathfinding Algorithms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+    <h1>Graph Pathfinding Algorithms</h1>
+
+    
+    <div id="controls">
+        <label for="from-node">From City:</label>
+        <input type="text" id="from-node" placeholder="Enter node">
+        <label for="to-node">To City:</label>
+        <input type="text" id="to-node" placeholder="Enter node">
+        <label for="cost">(Distance)Cost:</label>
+        <input type="number" id="cost" placeholder="Enter cost">
+        <button onclick="addEdge()">Add Edge</button>
+    </div>
+
+    <div id="buttons">
+        <button onclick="runBFS()">Run BFS</button>
+        <button onclick="runDFS()">Run DFS</button>
+        <button onclick="runUCS()">Run UCS</button>
+        
+
+    </div>
+
+    <div id="graph"></div>
+
+    <div id="priority-queue">
+        <h4>Priority Queue</h4>
+        <ul id="queue-list"></ul>
+    </div>
+
+    <div id="output">
+        <p id="result">Path, Cost, and Time Complexity will be displayed here.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
